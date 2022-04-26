@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4a4e4d</color>
+    <color name="colorPrimaryDark">#0e9aa7 </color>
+    <color name="colorAccent">#3da4ab</color>
+    <color name="primary_text_color">#212121</color>
+
+    <color name="secondary_text_color">#fe8a71</color>
+
+    <color name="white_color">#FFFFFF</color>
+
+    <color name="button_background_color">#f6cd61</color>
+
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="circular_image_border_color">#757575</color>
+    <color name="item_happy_place_description_text_color">#606060</color>
+    <color name="detail_screen_description_text_color">#757575</color>
+    <!--#4a4e4d • #0e9aa7 • #3da4ab • #f6cd61 • #fe8a71-->
+</resources>

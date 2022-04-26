@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.HappyPlaceDetailActivity">
+    <androidx.appcompat.widget.Toolbar android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:theme="@style/CustomToolbarStyle"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar_happy_place_detail"/>
+    -<ScrollView android:layout_height="0dp"
+    android:layout_width="match_parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:id="@+id/sv_main"
+    app:layout_constraintTop_toBottomOf="@id/toolbar_happy_place_detail"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:fillViewport="true">
+
+
+    -<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_height="@dimen/detail_screen_image_height_size"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/iv_place_image"
+        android:src="@drawable/detail_screen_image_placeholder"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/tv_description"
+        app:layout_constraintTop_toBottomOf="@+id/iv_place_image"
+        tools:text="Description"
+        app:layout_constraintHorizontal_bias="0.533"
+        android:textSize="@dimen/detail_screen_description_text_size"
+        android:textColor="@color/detail_screen_description_text_color"
+        android:layout_marginEnd="@dimen/detail_screen_description_margin"
+        android:layout_marginTop="@dimen/detail_screen_description_margin"
+        android:layout_marginStart="@dimen/detail_screen_description_margin"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/tv_location"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description"
+        tools:text="Location"
+        app:layout_constraintHorizontal_bias="0.533"
+        android:textSize="@dimen/detail_screen_location_text_size"
+        android:textColor="@color/colorAccent"
+        android:layout_marginEnd="@dimen/detail_screen_location_marginStartEnd"
+        android:layout_marginTop="@dimen/detail_screen_location_marginTop"
+        android:layout_marginStart="@dimen/detail_screen_location_marginStartEnd"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/btn_view_on_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/detail_screen_btn_view_on_map_marginStartEnd"
+        android:layout_marginTop="@dimen/detail_screen_btn_view_on_map_marginTop"
+        android:layout_marginEnd="@dimen/detail_screen_btn_view_on_map_marginStartEnd"
+        android:background="@drawable/shape_button_rounded"
+        android:gravity="center"
+        android:paddingBottom="@dimen/detail_screen_btn_view_on_map_PaddingTopBottom"
+        android:text="@string/btn_text_view_on_map"
+        android:textColor="@color/white"
+        android:textSize="@dimen/btn_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tv_location"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
